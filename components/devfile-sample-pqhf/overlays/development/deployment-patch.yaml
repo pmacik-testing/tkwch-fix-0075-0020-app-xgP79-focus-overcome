@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pqhf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0020-tenant/tkwch-fix-0075-0020-app/devfile-sample-pqhf@sha256:1096fc0520026dd917d92982abac2c1a3fe1df7c197bacc91188ea85afd27201
+        name: my-nodejs
+        resources: {}
+status: {}
